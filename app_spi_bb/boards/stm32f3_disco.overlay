@@ -1,0 +1,23 @@
+/ {
+	spibb0: spibb0 {
+		compatible = "zephyr,spi-bitbang";
+		status="okay";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		clk-gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
+		mosi-gpios = <&gpioa 1 GPIO_ACTIVE_HIGH>;
+		miso-gpios = <&gpioa 2 0>;
+		cs-gpios = <&gpioa 3 GPIO_ACTIVE_LOW>;
+	};
+
+	spibb1: spibb1 {
+		compatible = "zephyr,spi-bitbang";
+		status="okay";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		clk-gpios = <&gpioc 0 GPIO_ACTIVE_HIGH>;
+		mosi-gpios = <&gpioc 1 GPIO_ACTIVE_HIGH>;
+		miso-gpios = <&gpioc 2 0>;
+		cs-gpios = <&gpioc 3 GPIO_ACTIVE_LOW>;
+	};
+};
