@@ -12,9 +12,9 @@
 From https://arm-stm.blogspot.com/p/stm32f3discovery.html
 
 ### References
-- [Zephyr RTOS profile of stm32f3-disco](https://docs.zephyrproject.org/latest/boards/st/stm32f3_disco/doc/index.html)
+-[Zephyr RTOS profile of stm32f3-disco](https://docs.zephyrproject.org/latest/boards/st/stm32f3_disco/doc/index.html)
 
-- [Nordic Semiconductor Forum: Struggling for several days to get SPI working w/ Zephyr](https://devzone.nordicsemi.com/f/nordic-q-a/96015/struggling-for-several-days-to-get-spi-working-w-zephyr)
+-[Nordic Semiconductor Forum: Struggling for several days to get SPI working w/ Zephyr](https://devzone.nordicsemi.com/f/nordic-q-a/96015/struggling-for-several-days-to-get-spi-working-w-zephyr)
 
 -[Golioth IoT Blog: How to Use Generic SPI Devices with Zephyr](https://blog.golioth.io/how-to-use-generic-spi-devices-with-zephyr/)
 
