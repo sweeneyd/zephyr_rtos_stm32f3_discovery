@@ -5,9 +5,7 @@
 
 ## STM32F3 Discovery Pinout
 - From https://arm-stm.blogspot.com/p/stm32f3discovery.html
-![STM32F3 Discovery Pinout][logo]
-
-[logo]: https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/tree/main/_misc_/stm32f3_disco_pinout.png
+![STM32F3 Discovery Pinout](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/blob/main/_misc_/stm32f3_disco_pinout.png)
 
 ## References
 - [Zephyr RTOS profile of stm32f3-disco](https://docs.zephyrproject.org/latest/boards/st/stm32f3_disco/doc/index.html)
