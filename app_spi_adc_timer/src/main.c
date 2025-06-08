@@ -16,7 +16,7 @@ int main() {
         err |= write_spi1();
         err |= read_adc_sequence(adc_buffer);
         printf("%d, %d\n", (uint16_t)adc_buffer[0], (uint16_t)adc_buffer[1]);
-        k_sleep(K_MSEC(250));
+        k_sleep(K_MSEC(1000));
     }
 
     return 0;

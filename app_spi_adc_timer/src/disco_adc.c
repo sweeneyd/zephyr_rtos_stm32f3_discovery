@@ -52,8 +52,6 @@ int read_adc_sequence(uint32_t *data_buffer)
     {
         (void)adc_sequence_init_dt(&adc_channels[i], &sequence);
         err |= adc_read_dt(&adc_channels[i], &sequence);
-        printf("ADC out: %d\n", (int16_t)buf);
-        // err |= adc_raw_to_millivolts_dt(&adc_channels[i], &data_buffer[i]);
         data_buffer[i] = (int32_t)((int16_t)buf);
     
     }

@@ -6,6 +6,7 @@
 - [Multi-Device SPI Bit-Bang](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/tree/main/app_bb) with multiple GPIO chip select (CS), MOSI, MISO, and CLK pins 
 
 - [Multi-Device SPI Peripheral](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/tree/main/app_adc) with multiple GPIO chip select (CS) pins 
+
 - [Multi-Device SPI + Multi-Channel Internal ADC Read w/ Timer Interrupts](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/tree/main/app_spi_adc_timer)
 
 ### STM32F3 Discovery Pinout
