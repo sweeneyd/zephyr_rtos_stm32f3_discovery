@@ -1,0 +1,1 @@
+"mcuboot":"/home/dan/Projects/disco/bootloader/mcuboot":"/home/dan/Projects/disco/bootloader/mcuboot/boot/zephyr/sysbuild"
