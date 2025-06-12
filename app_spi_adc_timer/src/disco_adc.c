@@ -9,6 +9,8 @@
 #include <zephyr/sys/printk.h>
 #include <zephyr/sys/util.h>
 
+#include "disco_adc.h"
+
 #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) || \
 	!DT_NODE_HAS_PROP(DT_PATH(zephyr_user), io_channels)
 #error "No suitable devicetree overlay specified"

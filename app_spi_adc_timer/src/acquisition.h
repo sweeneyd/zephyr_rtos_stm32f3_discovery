@@ -5,17 +5,11 @@
 #include <zephyr/drivers/spi.h>
 #include <zephyr/devicetree.h>
 
-#include "acquisition.h"
+#include "disco_spi.h"
+#include "disco_adc.h"
+#include "demux.h"
 
-int main()
-{
+#define INTERVAL 50
 
-    setup_acquisition();
-
-    while(true)
-    {
-        do_acquisition_work();
-    }
-
-    return 0;
-}
+int setup_acquisition(void);
+int do_acquisition_work(void);

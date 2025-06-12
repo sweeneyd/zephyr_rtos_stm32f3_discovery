@@ -4,7 +4,7 @@
 
 /{
 	zephyr,user {
-		io-channels = <&adc1 1>, <&adc1 3>;
+		io-channels = <&adc1 1>, <&adc1 2>, <&adc1 3>;
 	};
 };
 
@@ -20,6 +20,14 @@
 		zephyr,resolution = <12>;
 	};
 
+	channel@2 {
+		reg = <2>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+
 	channel@3 {
 		reg = <3>;
 		zephyr,gain = "ADC_GAIN_1";
@@ -27,6 +35,7 @@
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
 	};
+	
 };
 
 &spi1 {
@@ -61,4 +70,20 @@
 		status = "okay";
 		label = "COUNTER_2";
 	};
+};
+
+
+&pll {
+	prediv = <1>;
+	mul = <9>;
+	clocks = <&clk_hse>;
+	status = "okay";
+};
+
+&rcc {
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(72)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <2>;
+	apb2-prescaler = <1>;
 };
