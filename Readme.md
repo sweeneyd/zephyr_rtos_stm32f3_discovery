@@ -50,7 +50,9 @@ west sdk install
 - [GitHub Keygen](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```
-ssh-keygen -t ed25519 -C "dan.sweeney90@gmail.com"
+ssh-keygen -t ed25519 -C "your.email@provider.com"
+git config --global user.name "your name"
+git config --global user.email "your.email@provider.com"
 ```
 
 ## Fix installation of STM32CubeProgrammer
