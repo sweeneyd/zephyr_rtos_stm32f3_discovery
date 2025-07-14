@@ -61,7 +61,7 @@ sudo apt-get install libusb-1.0-0  #For debian distributions
 ```
 - Get udev rules from the STMCube
 ```
-cd <your STM32CubeProgrammer install directory>/Drivers/rules
+cd ~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/Drivers/rules
 sudo cp *.* /etc/udev/rules.d/
 ```
 - Reload udev [rules](https://community.st.com/t5/edge-ai/st-link-error-dev-connect-err/td-p/804995)
