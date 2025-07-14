@@ -56,6 +56,7 @@ git config --global user.email "your.email@provider.com"
 ```
 
 ## Fix installation of STM32CubeProgrammer
+- Install [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)
 
 - Install libusb 
 ```
