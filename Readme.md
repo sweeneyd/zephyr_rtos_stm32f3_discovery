@@ -9,6 +9,8 @@
 
 - [Multi-Device SPI + Multi-Channel Internal ADC Read w/ Timer](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/tree/main/app_spi_adc_timer) ditto to above but with process timing controlled by timer/flags
 
+- [Interrupt-Driven Hardware Counter](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/tree/main/app_counter)
+
 ### STM32F3 Discovery Pinout
 ![STM32F3 Discovery Pinout](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/blob/main/_misc_/stm32f3_disco_pinout.png)
 - Source: https://arm-stm.blogspot.com/p/stm32f3discovery.html
