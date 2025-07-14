@@ -26,6 +26,7 @@
 
 - [disposedtrolly GitHub: spi-stm32-zephyr.md](https://gist.github.com/disposedtrolley/f0edbef0e65dbd7b56207e4ffc35c8d1)
 
+- [Zephyr RTOS Counter Alarm Example](https://github.com/sweeneyd/zephyr_rtos_stm32f3_discovery/tree/main/app_counter)
 
 
 ### Setup & Installation
@@ -51,3 +52,21 @@ west sdk install
 ```
 ssh-keygen -t ed25519 -C "dan.sweeney90@gmail.com"
 ```
+
+## Fix installation of STM32CubeProgrammer
+
+- Install libusb 
+```
+sudo apt-get install libusb-1.0-0  #For debian distributions
+```
+- Get udev rules from the STMCube
+```
+cd <your STM32CubeProgrammer install directory>/Drivers/rules
+sudo cp *.* /etc/udev/rules.d/
+```
+- Reload udev [rules](https://community.st.com/t5/edge-ai/st-link-error-dev-connect-err/td-p/804995)
+```
+sudo udevadm control --reload-rules
+```
+
+- Unplug and re-plug in USB device
